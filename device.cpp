@@ -31,7 +31,7 @@ class Device
       virtual void updateOutputs() = 0;
 };
 
-class Absorber: public Device
+class Absorber: public Device //absorber
 {
     public:
       void updateOutputs() override
@@ -67,6 +67,6 @@ int main()
     d1.addOutput(s1);
     d1.addOutput(s2);
     d1.updateOutputs();
-    
+
     return 0;
 }
